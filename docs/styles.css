@@ -1,0 +1,194 @@
+/* General Reset */
+body {
+    background-color: hsl(30, 38%, 92%);
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Container Styling */
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    height: auto;
+    margin-left: 375px;
+    margin-top: 125px;
+}
+
+.container {
+    display: inline-block;
+    background-color: white;
+    width: 50%;
+    height: 65vh;
+    font-family: 'Monsterrat';
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    
+
+}
+
+.img-container {
+    display: inline-block;
+    max-width: 250px;
+    border-radius: 20px;
+}
+
+/* Typography */
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px 20px;
+    
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: hsl(228, 12%, 48%);
+    margin: 10px 20px;
+    letter-spacing: 6px;
+    font-family: 'Montserrat';
+  
+}
+
+p {
+    font-size: 16px;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.6em;
+    margin: 10px 20px;
+    
+
+}
+
+/* Image Styling */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 65vh;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+/* Price Styling */
+.flex {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.dark-blue {
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    font-family: 'Montserrat';
+}
+
+.right {
+    text-decoration: line-through;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+
+/* Button Styling */
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px 55px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: hsl(158, 36%, 47%);
+    transform: scale(1.05);
+}
+
+/* Styles for 375px screen width */
+@media screen and (max-width: 375px) {
+    body {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        background-color: hsl(30, 38%, 92%);
+    }
+
+    .main {
+        flex-direction: column;
+        margin: 0; /* Remove large margins */
+        padding: 10px;
+        align-items: stretch;
+    }
+
+    .container {
+        width: 100%; /* Full width for small screens */
+        padding: 15px;
+        height: auto;
+    }
+
+    .img-container {
+        max-width: 100%;
+        margin: 0 auto; /* Center images */
+    }
+
+    img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    h3, p {
+        font-size: 12px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .flex {
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+    }
+
+    .dark-blue {
+        font-size: 16px;
+    }
+
+    .right {
+        font-size: 12px;
+    }
+
+    button {
+        width: 90%;
+        font-size: 14px;
+        padding: 10px;
+        margin: 10px auto; /* Center the button */
+    }
+}
+
+
+
+
+
+   
+
+
